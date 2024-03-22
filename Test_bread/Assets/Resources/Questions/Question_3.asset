@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 739a467b597ea0e4b88d370944208956, type: 3}
   m_Name: Question_3
   m_EditorClassIdentifier: 
-  questionTitle: DDDDDDDD3
-  questionText: EEEEEEEEE3
-  answer: SSSSSSSS3
+  questionTitle: Question 3
+  questionText: Text 3
+  answer: Answer 3

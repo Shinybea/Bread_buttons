@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Question_1
   m_EditorClassIdentifier: 
   questionTitle: Question 1
-  questionText: Text 1
-  answer: Answer 1
+  questionText: "\xE9 verde?"
+  answer: Yossa

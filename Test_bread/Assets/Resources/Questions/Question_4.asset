@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Question_4
   m_EditorClassIdentifier: 
   questionTitle: Question 4
-  questionText: Text 4
-  answer: Answer 4
+  questionText: "\xE9 in basso?"
+  answer: 'Non credo '

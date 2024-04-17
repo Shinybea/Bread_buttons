@@ -7,7 +7,7 @@ using TMPro;
 public class QuestionSetup : MonoBehaviour
 {
     [SerializeField] public List<QuestionDataSO> questions;
-
+    public ChooseLevel chooseLevel;
     //Data for question 1 button
     [Header("Question Button 1")]
     public QuestionDataSO currentQuestion1;
@@ -34,10 +34,29 @@ public class QuestionSetup : MonoBehaviour
         SetQuestionValues();
     }
 
-    private void GetQuestionAssets() 
+ 
+    public void GetQuestionAssets()
     {
-        questions = new List<QuestionDataSO>(Resources.LoadAll<QuestionDataSO>("Questions"));
+        Debug.Log($"Selected Level: {chooseLevel.Level}");
+
+        switch (chooseLevel.Level)
+        {
+            case 1:
+                questions = new List<QuestionDataSO>(Resources.LoadAll<QuestionDataSO>("Questions"));
+                Debug.Log("Level1 questions");
+                chooseLevel.Level = 0;
+                break;
+            case 2:
+                questions = new List<QuestionDataSO>(Resources.LoadAll<QuestionDataSO>("Questions2"));
+                Debug.Log("Level2 questions");
+                break;
+
+            default:
+                Debug.LogError("Invalid level selected");
+                break;
+        }
     }
+
     private void SelectNewQuestion()
     {
         int randomQuestionIndex = Random.Range(0, questions.Count);     //randomize selection

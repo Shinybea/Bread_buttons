@@ -7,7 +7,7 @@ using TMPro;
 public class QuestionSetup : MonoBehaviour
 {
     [SerializeField] public List<QuestionDataSO> questions;
-
+    public ChooseLevel chooseLevel;
     //Data for question 1 button
     [Header("Question Button 1")]
     public QuestionDataSO currentQuestion1;
@@ -36,7 +36,9 @@ public class QuestionSetup : MonoBehaviour
 
     private void GetQuestionAssets() 
     {
+        if(chooseLevel.Level == 1)
         questions = new List<QuestionDataSO>(Resources.LoadAll<QuestionDataSO>("Questions"));
+        Debug.Log("Level1 questions");
     }
     private void SelectNewQuestion()
     {

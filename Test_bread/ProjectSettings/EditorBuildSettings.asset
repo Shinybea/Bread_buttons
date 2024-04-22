@@ -6,21 +6,21 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Scena4.unity
-    guid: 600e67ccd34c30146a06e33c9c5a25be
-  - enabled: 1
-    path: Assets/Scenes/Fucking Looser.unity
-    guid: 0a7d535809353d04191de46417e63212
+    path: Assets/Scenes/Menu.unity
+    guid: 8f245f72e88d47f4eafa2bb48f02a728
   - enabled: 1
     path: Assets/Scenes/Scena1.unity
     guid: ff61c19e168cb3f4b92cc5de86d7e1db
-  - enabled: 1
-    path: Assets/Scenes/Menu.unity
-    guid: 8f245f72e88d47f4eafa2bb48f02a728
   - enabled: 1
     path: Assets/Scenes/Scena2.unity
     guid: eaa6b66afc337fb4387b486e3e10370a
   - enabled: 1
     path: Assets/Scenes/Scena3.unity
     guid: d7e6fc2a53017b34b8b09b0eaf06eb24
+  - enabled: 1
+    path: Assets/Scenes/Scena4.unity
+    guid: 600e67ccd34c30146a06e33c9c5a25be
+  - enabled: 1
+    path: Assets/Scenes/Fucking Looser.unity
+    guid: 0a7d535809353d04191de46417e63212
   m_configObjects: {}

@@ -26,6 +26,7 @@ public class QuestionSetup : MonoBehaviour
     private void Awake()
     {
         GetQuestionAssets();
+        GetQuestion();
     }
    
     public void GetQuestion()
@@ -47,10 +48,18 @@ public class QuestionSetup : MonoBehaviour
                 chooseLevel.Level = 0;
                 break;
             case 2:
-                questions = new List<QuestionDataSO>(Resources.LoadAll<QuestionDataSO>("Questions2"));
+                questions = new List<QuestionDataSO>(Resources.LoadAll<QuestionDataSO>("Questions 2"));
                 Debug.Log("Level2 questions");
                 break;
-
+            case 3:
+                questions = new List<QuestionDataSO>(Resources.LoadAll<QuestionDataSO>("Questions 3"));
+                Debug.Log("Level2 questions");
+                break;
+            case 4:
+                questions = new List<QuestionDataSO>(Resources.LoadAll<QuestionDataSO>("Questions 3"));
+                Debug.Log("Level2 questions");
+                break;
+                
             default:
                 Debug.LogError("Invalid level selected");
                 break;
@@ -84,9 +93,11 @@ public class QuestionSetup : MonoBehaviour
     public void ClickQuestion1()
     {
         answerButton.answerText.text = currentQuestion1.answer;
+        GetQuestion();
     }
     public void ClickQuestion2()
     {
         answerButton.answerText.text = currentQuestion2.answer;
+        GetQuestion();
     }
 }

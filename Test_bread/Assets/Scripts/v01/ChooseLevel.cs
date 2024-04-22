@@ -33,4 +33,14 @@ public class ChooseLevel : MonoBehaviour
         Level = 2;
         Debug.Log($"Level set to {Level}");
     }
+    public void Level3()
+    {
+        Level = 3;
+        Debug.Log($"Level set to {Level}");
+    }
+    public void Level4()
+    {
+        Level = 4;
+        Debug.Log($"Level set to {Level}");
+    }
 }

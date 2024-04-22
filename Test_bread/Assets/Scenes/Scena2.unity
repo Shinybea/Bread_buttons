@@ -2698,6 +2698,26 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -282.69064
       objectReference: {fileID: 0}
+    - target: {fileID: 8786099787553739058, guid: c84fdf10176a0644d8db16a919874d21, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8786099787553739058, guid: c84fdf10176a0644d8db16a919874d21, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1624155916494724556, guid: 489bc56a157beaa4394872401d122086, type: 3}
+    - target: {fileID: 8786099787553739058, guid: c84fdf10176a0644d8db16a919874d21, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnClick
+      objectReference: {fileID: 0}
+    - target: {fileID: 8786099787553739058, guid: c84fdf10176a0644d8db16a919874d21, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: AnswerButton, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 8786099787553739058, guid: c84fdf10176a0644d8db16a919874d21, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 1067131311793485345, guid: c84fdf10176a0644d8db16a919874d21, type: 3}

@@ -16,7 +16,7 @@ public class AnswerButton : MonoBehaviour
         Debug.Log("Answers given, answers received.");
         if(questionSetup.questions.Count > 0) 
         {
-            questionSetup.GetQuestion();
+    
         }
         else 
         {
@@ -27,6 +27,6 @@ public class AnswerButton : MonoBehaviour
     public void EndGame()
     {
         //What happens when there aren't any more questions?
-        Application.Quit();
+        
     }
 }

@@ -34,12 +34,29 @@ public class QuestionSetup : MonoBehaviour
         SetQuestionValues();
     }
 
-    private void GetQuestionAssets() 
+ 
+    public void GetQuestionAssets()
     {
-        if(chooseLevel.Level == 1)
-        questions = new List<QuestionDataSO>(Resources.LoadAll<QuestionDataSO>("Questions"));
-        Debug.Log("Level1 questions");
+        Debug.Log($"Selected Level: {chooseLevel.Level}");
+
+        switch (chooseLevel.Level)
+        {
+            case 1:
+                questions = new List<QuestionDataSO>(Resources.LoadAll<QuestionDataSO>("Questions"));
+                Debug.Log("Level1 questions");
+                chooseLevel.Level = 0;
+                break;
+            case 2:
+                questions = new List<QuestionDataSO>(Resources.LoadAll<QuestionDataSO>("Questions2"));
+                Debug.Log("Level2 questions");
+                break;
+
+            default:
+                Debug.LogError("Invalid level selected");
+                break;
+        }
     }
+
     private void SelectNewQuestion()
     {
         int randomQuestionIndex = Random.Range(0, questions.Count);     //randomize selection

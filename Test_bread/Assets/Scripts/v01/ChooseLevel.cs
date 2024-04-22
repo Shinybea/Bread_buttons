@@ -5,17 +5,32 @@ using UnityEngine;
 
 public class ChooseLevel : MonoBehaviour
 {
+    public static ChooseLevel Instance;
     public int Level;
 
-   public void Level1()
+    private void Awake()
+    {
+
+        if (Instance == null)
+        {
+            Instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+    }
+
+    public void Level1()
     {
         Level = 1;
-        Debug.Log("Level1 Chosen");
+        Debug.Log($"Level set to {Level}");
 
     }
     public void Level2()
     {
         Level = 2;
-        Debug.Log("Level2 Chosen");
+        Debug.Log($"Level set to {Level}");
     }
 }
